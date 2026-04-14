@@ -27,7 +27,7 @@ const portfolioData = [
     title: "Juara 2 MHQ SMP",
     img: "porto5.jpg",
     imgFallback: "https://picsum.photos/seed/porto5/800/450",
-    desc: "Pada tanggal 14 Desember 2024, saya meraih juara kedua di acara GEM FEST 2.0 Yaspia Al'Imaroh kategori Musabaqah Hifdzil Qur'an (MHQ)."
+    desc: "Pada tanggal 14 Desember 2024, saya meraih juara kedua di acara GEM FEST 2.0 Yaspia Al 'Imaroh kategori Musabaqah Hifdzil Qur'an (MHQ)."
   },
   {
     title: "Peserta FLS3NFG 2026",
