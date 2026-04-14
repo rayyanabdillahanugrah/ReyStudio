@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReyStudio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <span class="loader-text">Loading<span class="dots">...</span></span>
+    </div>
+  </div>
+
+  <div id="scroll-progress"></div>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">ReyStudio<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#songs">Music</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#songs" class="mobile-link">Music</a>
+      <a href="#works" class="mobile-link">Works</a>
+      <a href="#portfolio" class="mobile-link">Portfolio</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </nav>
+
+
+  <section id="hero">
+    <div class="hero-bg-shape shape-1"></div>
+    <div class="hero-bg-shape shape-2"></div>
+    <div class="hero-bg-shape shape-3"></div>
+    <div class="hero-card reveal-hero">
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring"></div>
+        <img
+          class="hero-photo"
+          src="fotoprofil.jpg"
+          alt="Foto Profil"
+          onerror="this.src='https://ui-avatars.com/api/?name=Nama+Saya&size=200&background=e8e8e8&color=333&bold=true&font-size=0.35'"
+        />
+        <div class="hero-photo-badge">✦</div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting">Halo, saya</p>
+        <h1 class="hero-name">Rayyan Abdillah Anugrah<span class="hero-dot">.</span></h1>
+        <p class="hero-desc">
+          An ordinary person who just wants to look cool
+        </p>
+        <div class="hero-tags">
+          <span class="tag">Photografer</span>
+          <span class="tag">Writer</span>
+          <span class="tag">Gamer</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary">Explore <span>↓</span></a>
+          <a href="#contact" class="btn btn-ghost">Hubungi Saya</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label reveal">About Me</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">About me<br/><em>Tentang saya</em></h2>
+          <p class="about-para text-justify">
+            Saya lahir di Jakarta, 24 April 2009. Saya senang menciptakan karya yang beragam, dari foto yang bercerita hingga
+            tulisan-tulisan aneh tapi keren. Setiap proyek
+             yang saya buat adalah kesempatan untuk belajar dan berkembang.
+          </p>
+          <p class="about-para text-justify">
+             <em>
+             "Jika segalanya diberikan dan tidak lagi diperjuangkan,
+             apakah manusia tetaplah manusia,
+             atau menjadi konsumen abadi dari anugerah ilahi?"
+             </em>
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-num">SD</span>
+              <span class="stat-label">SDN Batu Ampar<br/>11 Pagi</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">SMP</span>
+              <span class="stat-label">SMPIT Para Juara<br/>Bekasi</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">SMA</span>
+              <span class="stat-label">SMAN 39 JAKARTA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-hobbies reveal">
+          <h3 class="hobbies-title">Hobi & Minat</h3>
+          <div class="hobby-grid">
+            <div class="hobby-card">
+              <span class="hobby-icon">📷</span>
+              <span class="hobby-name">Fotografi</span>
+              <span class="hobby-desc">Setiap detik itu berharga</span>
+            </div>
+            <div class="hobby-card">
+              <span class="hobby-icon">✍️</span>
+              <span class="hobby-name">Menulis</span>
+              <span class="hobby-desc">Ungkapan rasa lewat rangkaian aksara</span>
+            </div>
+            <div class="hobby-card">
+              <span class="hobby-icon">📚</span>
+              <span class="hobby-name">Membaca</span>
+              <span class="hobby-desc">Suka bukunya, ga suka harganya</span>
+            </div>
+            <div class="hobby-card">
+              <span class="hobby-icon">🏃</span>
+              <span class="hobby-name">Berlari</span>
+              <span class="hobby-desc">Semoga bisa sampai marathon </span>
+            </div>
+            <div class="hobby-card">
+              <span class="hobby-icon">🎮</span>
+              <span class="hobby-name">Main Game</span>
+              <span class="hobby-desc">Terkadang jago, terkadang cupu</span>
+            </div>
+            <div class="hobby-card">
+              <span class="hobby-icon">🎵</span>
+              <span class="hobby-name">Musik</span>
+              <span class="hobby-desc">Ialah harapan untuk tetap hidup</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SONGS ░░ -->
+  <section id="songs" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal">Favorite Songs</div>
+      <h2 class="section-title centered reveal">My Top Picks<br/><em>Tiga Lagu Favorit</em></h2>
+      <p class="section-sub reveal">Alhamdulillah ada yang nyiptain lagu ini</p>
+
+      <div class="songs-grid">
+
+        <div class="song-card reveal">
+          <div class="song-cover-wrap">
+            <img
+              class="song-cover"
+              src="The-Queen-is-Dead-cover.png"
+              alt="Album Cover 1"
+              onerror="this.src='https://ui-avatars.com/api/?name=♫&size=120&background=1a1a2e&color=fff&font-size=0.6'"
+            />
+            <div class="song-play-overlay">
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <div class="song-info">
+            <span class="song-num">01</span>
+            <div>
+              <h4 class="song-title">There Is a Light That Never Goes Out</h4>
+              <p class="song-artist">The Smiths</p>
+            </div>
+          </div>
+          <audio controls class="audio-player">
+            <source src="The_Smiths_There_Is_a_Light_That_Never_Goes_Out_2011_Remaster.mp3" type="audio/mp3"/>
+            Browser Anda tidak mendukung audio.
+          </audio>
+        </div>
+
+        <div class="song-card reveal">
+          <div class="song-cover-wrap">
+            <img
+              class="song-cover"
+              src="Perunggu_-_Memorandum.jpg"
+              alt="Album Cover 2"
+              onerror="this.src='https://ui-avatars.com/api/?name=♬&size=120&background=2d1b69&color=fff&font-size=0.6'"
+            />
+            <div class="song-play-overlay">
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <div class="song-info">
+            <span class="song-num">02</span>
+            <div>
+              <h4 class="song-title">Kalibata, 2012</h4>
+              <p class="song-artist">Perunggu</p>
+            </div>
+          </div>
+          <audio controls class="audio-player">
+            <source src="Perunggu - Kalibata, 2012.mp3" type="audio/mp3"/>
+            Browser Anda tidak mendukung audio.
+          </audio>
+        </div>
+
+        <div class="song-card reveal">
+          <div class="song-cover-wrap">
+            <img
+              class="song-cover"
+              src="heyjudealbum.jpeg"
+              alt="Album Cover 3"
+              onerror="this.src='https://ui-avatars.com/api/?name=🎵&size=120&background=0d3b66&color=fff&font-size=0.5'"
+            />
+            <div class="song-play-overlay">
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <div class="song-info">
+            <span class="song-num">03</span>
+            <div>
+              <h4 class="song-title">Hey Jude</h4>
+              <p class="song-artist">The Beatles</p>
+            </div>
+          </div>
+          <audio controls class="audio-player">
+            <source src="The Beatles - Hey Jude (2015 Mix).mp3" type="audio/mp3"/>
+            Browser Anda tidak mendukung audio.
+          </audio>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="works" class="section">
+    <div class="container">
+      <div class="section-label reveal">Digital Works</div>
+      <h2 class="section-title centered reveal">Karya <em>Digital</em></h2>
+      <p class="section-sub reveal">Koleksi karya yang telah saya buat</p>
+
+      <div class="works-list">
+
+        <div class="work-card reveal">
+          <div class="work-card-left">
+            <div class="work-num">01</div>
+            <div class="work-info">
+              <h4 class="work-title">Sebab Senyummu Pernah Singgah</h4>
+              <p class="work-desc">Sebuah antologi puisi tentang rasa yang tak kunjung sirna.</p>
+              <div class="work-tags">
+                <span class="work-tag">Tulisan</span>
+                <span class="work-tag">E-Book</span>
+              </div>
+            </div>
+          </div>
+          <a href="Sebab Senyummu Pernah Singgah.pdf" target="_blank" class="btn btn-download"
+            <span class="dl-icon"></span> Lihat
+          </a>
+        </div>
+
+        <div class="work-card reveal">
+          <div class="work-card-left">
+            <div class="work-num">02</div>
+            <div class="work-info">
+              <h4 class="work-title">Surprise...</h4>
+              <p class="work-desc">Sebuah web ulang tahun interaktif berbasis HTML, CSS, dan JavaScript.</p>
+              <div class="work-tags">
+                <span class="work-tag">Web</span>
+                <span class="work-tag">Interaktif</span>
+              </div>
+            </div>
+          </div>
+          <a href="https://rayyanabdillahanugrah.github.io/WebUltah/" target="_blank" class="btn btn-download"
+            <span class="dl-icon"></span> Kunjungi
+          </a>
+        </div>
+
+        <div class="work-card reveal">
+          <div class="work-card-left">
+            <div class="work-num">03</div>
+            <div class="work-info">
+              <h4 class="work-title">Coming Soon</h4>
+              <p class="work-desc">Coming Soon</p>
+              <div class="work-tags">
+                <span class="work-tag">-</span>
+                <span class="work-tag">-</span>
+              </div>
+            </div>
+          </div>
+          <a href="files/work3.zip" download class="btn btn-download">
+            <span class="dl-icon">↓</span> Download
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal">Portfolio</div>
+      <h2 class="section-title centered reveal">Prestasi &<br/><em>Momen Terbaik</em></h2>
+      <p class="section-sub reveal">Klik untuk melihat detail</p>
+
+      <div class="portfolio-grid">
+
+        <div class="portfolio-item reveal" data-index="0">
+          <img
+            class="portfolio-img"
+            src="porto1.jpg"
+            alt="Prestasi 1"
+            onerror="this.src='https://picsum.photos/seed/porto1/600/450'"
+          />
+          <div class="portfolio-overlay">
+            <span class="portfolio-icon">⊕</span>
+            <span class="portfolio-label">Lihat Detail</span>
+          </div>
+          <div class="portfolio-caption">Juara 3 MHQ SMP</div>
+        </div>
+
+        <div class="portfolio-item reveal" data-index="1">
+          <img
+            class="portfolio-img"
+            src="porto2.jpg"
+            alt="Prestasi 2"
+            onerror="this.src='https://picsum.photos/seed/porto2/600/450'"
+          />
+          <div class="portfolio-overlay">
+            <span class="portfolio-icon">⊕</span>
+            <span class="portfolio-label">Lihat Detail</span>
+          </div>
+          <div class="portfolio-caption">15 Besar Lomba CCI</div>
+        </div>
+
+        <div class="portfolio-item reveal" data-index="2">
+          <img
+            class="portfolio-img"
+            src="porto3.jpg"
+            alt="Prestasi 3"
+            onerror="this.src='https://picsum.photos/seed/porto3/600/450'"
+          />
+          <div class="portfolio-overlay">
+            <span class="portfolio-icon">⊕</span>
+            <span class="portfolio-label">Lihat Detail</span>
+          </div>
+          <div class="portfolio-caption">Juara 2 MHQ SMP</div>
+        </div>
+
+        <div class="portfolio-item reveal" data-index="3">
+          <img
+            class="portfolio-img"
+            src="images/porto4.jpg"
+            alt="Prestasi 4"
+            onerror="this.src='https://picsum.photos/seed/porto4/600/450'"
+          />
+          <div class="portfolio-overlay">
+            <span class="portfolio-icon">⊕</span>
+            <span class="portfolio-label">Lihat Detail</span>
+          </div>
+          <div class="portfolio-caption">Coming Soon</div>
+        </div>
+
+        <div class="portfolio-item reveal" data-index="4">
+          <img
+            class="portfolio-img"
+            src="images/porto5.jpg"
+            alt="Prestasi 5"
+            onerror="this.src='https://picsum.photos/seed/porto5/600/450'"
+          />
+          <div class="portfolio-overlay">
+            <span class="portfolio-icon">⊕</span>
+            <span class="portfolio-label">Lihat Detail</span>
+          </div>
+          <div class="portfolio-caption">Coming Soon</div>
+        </div>
+
+        <div class="portfolio-item reveal" data-index="5">
+          <img
+            class="portfolio-img"
+            src="images/porto6.jpg"
+            alt="Prestasi 6"
+            onerror="this.src='https://picsum.photos/seed/porto6/600/450'"
+          />
+          <div class="portfolio-overlay">
+            <span class="portfolio-icon">⊕</span>
+            <span class="portfolio-label">Lihat Detail</span>
+          </div>
+          <div class="portfolio-caption">Coming Soon</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label reveal">Contact</div>
+      <h2 class="section-title centered reveal">Lets <em>Connect</em></h2>
+      <p class="section-sub reveal">Saya terbuka untuk kolaborasi, proyek, dan obrolan menarik</p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3 class="contact-info-title">Informasi Kontak</h3>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <span class="contact-info-icon">📧</span>
+              <div>
+                <span class="contact-info-label">Email</span>
+                <a href="mailto:rayyanabdillahanugrah@gmail.com" class="contact-info-val">rayyanabdillahanugrah@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-info-icon">📍</span>
+              <div>
+                <span class="contact-info-label">Lokasi</span>
+                <span class="contact-info-val">Jakarta, Indonesia</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-info-icon">💼</span>
+              <div>
+                <span class="contact-info-label">Tersedia sebagai</span>
+                <span class="contact-info-val">Teman obrolan yang seru</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="#" class="social-btn" title="Instagram">IG</a>
+            <a href="#" class="social-btn" title="Twitter / X">𝕏</a>
+            <a href="#" class="social-btn" title="LinkedIn">in</a>
+            <a href="#" class="social-btn" title="GitHub">GH</a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <form id="contact-form" 
+                action="https://formspree.io/f/xojyavnz" 
+                method="POST">
+           <div class="form-group">
+             <label class="form-label" for="fname">Nama Lengkap</label>
+             <input class="form-input" type="text" id="fname" name="nama"
+                    placeholder="Masukkan nama Anda" required>
+             </div>
+
+            <div class="form-group">
+              <label class="form-label" for="femail">Email</label>
+              <input class="form-input" type="email" id="femail" name="email"
+                     placeholder="Masukkan email Anda" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="fmsg">Pesan</label>
+              <textarea class="form-input form-textarea" id="fmsg" name="pesan"
+                        placeholder="Halo! Saya ingin berdiskusi tentang..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+               Kirim Pesan <span>→</span>
+            </button>
+
+            <div class="form-success" id="form-success">
+              ✓ Pesan berhasil dikirim! Terima kasih sudah hubungi saya.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">ReyStudio<span class="dot">.</span></span>
+      <span class="footer-copy">© 2026 ReyStudio — Together, we change the world</span>
+      <a href="#hero" class="footer-top">↑ Atas</a>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="modal" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <img class="modal-img" id="modal-img" src="" alt=""/>
+      <div class="modal-body">
+        <h3 class="modal-title" id="modal-title"></h3>
+        <p class="modal-desc" id="modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <button class="scroll-top" id="scroll-top" onclick="scrollToTop()" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
