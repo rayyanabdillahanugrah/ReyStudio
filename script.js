@@ -21,7 +21,7 @@ const portfolioData = [
     title: "Ketua OSIS",
     img: "porto4.jpg",
     imgFallback: "https://picsum.photos/seed/porto4/800/450",
-    desc: "Terpilih sebagai Ketua OSIS di sekolah saya untuk periode 2023-2024. Saya memimpin berbagai kegiatan dan proker yang bermanfaat."
+    desc: "Saya terpilih sebagai Ketua OSIS di sekolah untuk periode 2023-2024. Saya memimpin berbagai kegiatan dan proker yang bermanfaat."
   },
   {
     title: "Juara 2 MHQ SMP",
