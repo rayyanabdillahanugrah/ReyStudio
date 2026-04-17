@@ -94,7 +94,6 @@ const observer  = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
-        // Stagger sibling reveals
         const siblings = Array.from(entry.target.parentElement.querySelectorAll(".reveal"));
         const idx = siblings.indexOf(entry.target);
         entry.target.style.transitionDelay = (idx * 80) + "ms";
@@ -107,7 +106,6 @@ const observer  = new IntersectionObserver(
 );
 revealEls.forEach(el => observer.observe(el));
 
-// ── Portfolio Modal ───────────────────────────────────────────
 const modal     = document.getElementById("modal");
 const modalImg  = document.getElementById("modal-img");
 const modalTit  = document.getElementById("modal-title");
@@ -167,7 +165,6 @@ document.querySelectorAll(".song-cover-wrap").forEach(wrap => {
 
   wrap.addEventListener("click", () => {
     if (audio.paused) {
-      // pause all others first
       document.querySelectorAll("audio").forEach(a => { if (a !== audio) a.pause(); });
       audio.play();
       icon.textContent = "⏸";
