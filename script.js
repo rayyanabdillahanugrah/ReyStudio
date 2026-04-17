@@ -31,7 +31,7 @@ const portfolioData = [
   },
   {
     title: "Peserta FLS3NFG 2026",
-    img: "logo-fls3n-scaled.png",
+    img: "porto6.jpg",
     imgFallback: "https://picsum.photos/seed/porto6/800/450",
     desc: "Saya mewakili sekolah dalam lomba FLS3N 2026 jenjang SMA dalam bidang fotografi yang diselenggarakan Pusat Prestasi Nasional (Puspresnas)."
   }
